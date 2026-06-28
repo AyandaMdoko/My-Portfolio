@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Ayanda Mdoko</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">Ayanda<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN -->
+  <main>
+    <p class="section-label">Get in touch</p>
+    <h1 class="section-title">Contact Me</h1>
+    <p class="section-subtitle">Feel free to reach out — I'm always open to new opportunities and conversations.</p>
+
+    <div class="contact-grid">
+
+      <!-- Email -->
+      <a href="mailto:mdokoayanda@gmail.com" class="contact-card">
+        <div class="contact-icon">
+          <img src="./images/OIP.jpeg" alt="Email icon" />
+        </div>
+        <p class="contact-type">Email</p>
+        <p class="contact-value">mdokoayanda@gmail.com</p>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/ayanda-mdoko-454981299" target="_blank" rel="noopener" class="contact-card">
+        <div class="contact-icon">
+          <img src="./images/Linkedin-icon" alt="LinkedIn icon" />
+        </div>
+        <p class="contact-type">LinkedIn</p>
+        <p class="contact-value">Connect on LinkedIn</p>
+      </a>
+
+      <!-- Phone -->
+      <a href="tel:+27635999488" class="contact-card">
+        <div class="contact-icon">
+          <img src="./images/phoneNum.png" alt="Phone icon" />
+        </div>
+        <p class="contact-type">Phone</p>
+        <p class="contact-value">+27 63 599 9488</p>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Copyright &copy; 2026 Ayanda Mdoko. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('mousemove', e => {
+      const cx = (e.clientX / window.innerWidth  - 0.5) * 25;
+      const cy = (e.clientY / window.innerHeight - 0.5) * 25;
+      document.querySelector('.blob-1').style.transform = `translate(${cx}px,${cy}px)`;
+      document.querySelector('.blob-2').style.transform = `translate(${-cx}px,${-cy}px)`;
+    });
+  </script>
+  <script src="nav.js"></script>
+
+</body>
+</html>
