@@ -391,18 +391,19 @@
 #projects {
   position: relative;
   padding: 1rem 2rem 2rem;
-  margin: auto;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 .project-container{
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust to screen size */
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
 .details-project-container{
 
-  padding: 1.5rem;
+  padding: 1.1rem;
   background: rgb(77, 92, 157);
   border-radius: 2rem;
   border: rgb(163, 163, 163) 0.1rem solid;
@@ -424,15 +425,15 @@
   background: #090e32;
 }
 .project-title {
-    margin: 1rem 0;
+    margin: 0.75rem 0;
     color: rgb(163, 163, 163);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
 .project-img {
   border-radius: 2rem;
-  width: 50%;
+  width: 42%;
   height: auto; /* Maintain aspect ratio */
   object-fit: cover;
 }
@@ -485,6 +486,12 @@
     font-size: medium;
     border-color: rgb(163, 163, 163);
     font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 600px) {
+  .project-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 
